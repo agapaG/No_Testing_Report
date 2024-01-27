@@ -30,6 +30,13 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
+            <GroupBox Header="Список инженеров" Grid.Row="0" Grid.Column="0"
+                      BorderThickness="2" BorderBrush="LightGray">
+                <ListBox>
+
+                </ListBox>
+            </GroupBox>
+
         </Grid>
         
     </DockPanel>

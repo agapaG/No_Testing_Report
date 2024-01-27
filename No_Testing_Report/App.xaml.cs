@@ -1,9 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using No_Testing_Report.ViewModels;
-using System;
+﻿using System;
 using System.Windows;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using No_Testing_Report.ViewModels;
+
+using NLog;
 
 namespace No_Testing_Report
 {
@@ -12,6 +14,8 @@ namespace No_Testing_Report
 	/// </summary>
 	public partial class App : Application
 	{
+
+
 		internal static IHost __Host;
 		public static IHost Host => __Host
 			??= Program.CreateHostBuilder(Environment.GetCommandLineArgs()).Build();
